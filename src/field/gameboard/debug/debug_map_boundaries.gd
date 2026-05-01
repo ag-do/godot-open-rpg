@@ -7,9 +7,6 @@ class_name DebugGameboardBoundaries extends Node2D
 @export var gameboard_properties: GameboardProperties:
 	set(value):
 		gameboard_properties = value
-		# For some reason, Godot 4.4.1 won't connect to gameboard_properties signals here, so its
-		# done on _ready instead. This means that the scene may need to be loaded before the
-		# debug boundaries will automatically update.
 		_update_boundaries()
 
 @export var boundary_color: Color = Color.DARK_RED:

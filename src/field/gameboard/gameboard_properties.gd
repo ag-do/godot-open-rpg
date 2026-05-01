@@ -27,7 +27,7 @@ const INVALID_INDEX: = -1
 @export var cell_size: = Vector2i(16, 16):
 	set(value):
 		cell_size = value
-		half_cell_size = cell_size/2
+		half_cell_size = cell_size/2.0
 		cell_size_changed.emit()
 
 var half_cell_size: = cell_size / 2.0
